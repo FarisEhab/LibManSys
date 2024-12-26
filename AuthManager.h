@@ -4,13 +4,16 @@
 
 #ifndef AUTHMANAGER_H
 #define AUTHMANAGER_H
-#include <unordered_map>
+#include <map>
 #include <string>
+
+#include "User.h"
 
 
 class AuthManager {
 private:
-    std::unordered_map<std::string, std::string> users; // username -> password
+
+    std::map<std::string, User> users; // username -> password
 
 public:
     //signup method

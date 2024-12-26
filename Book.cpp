@@ -13,3 +13,9 @@ Book::Book(const std::string& ISBN, const std::string& title, const Author& auth
     this->numCopies = numCopies;
     this->category = category;
 }
+
+std::string Book::getISBN() const {
+    return ISBN;
+}
+
+//TODO:: Implement the isAvailable method after implementing the Catalogue class

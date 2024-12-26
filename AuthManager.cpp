@@ -7,11 +7,15 @@
 #include <iostream>
 
 bool AuthManager::signUp(const std::string &username, const std::string &password) {
+    // check if the username already exists
     if (users.find(username) != users.end()) {
         std::cerr << "Username already exists" << std::endl;
         return false;
     }
-    users[username] = password;
+    // add the user to the map
+    // TODO:: Handle how to create a reader or staff
+    Reader reader(username, password);
+    users[username] = reader;
     std::cout << "User created successfully" << std::endl;
     return true;
 };

@@ -8,12 +8,13 @@ add_executable(LibraryManagementSystem main.cpp
         Author.h
         Author.cpp
         Book.cpp
-        Reader.h
-        Reader.cpp
         Library.h
         User.h
         User.cpp
         AuthManager.h
         AuthManager.cpp
         Library.cpp
+        Transaction.cpp
+        Catalogue.h
+        Catalogue.cpp
 )
