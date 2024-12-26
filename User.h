@@ -16,6 +16,13 @@ protected:
     int id;
     std::string username;
     std::string password;
+
+public:
+    User(const std::string& username, const std::string& password);
+    virtual ~User() = default;
+
+    virtual void displayRole() const = 0;
+
 };
 
 class Reader : public User {
@@ -23,16 +30,21 @@ private:
     std::vector<Book> borrwedBooks;
 
 public:
-    // Constructor
-    Reader(const std::string& username, const std::string &password);
+    //polymporphism
+    void displayRole() const override;
     // Borrow a book
-    void borrowBook(const Book& book);
+    void borrowBook(Book& book);
 };
 
 class Staff : public User {
-    void Catalogue::addBook(Book book);
-    void Catalogue::removeBook(Book book);
-    void Catalogue::updateBook(Book book);
+
+public:
+    void displayRole() const override;
+    static void addBook(const std::string& ISBN, const std::string& title,
+        const Author& author,
+        int numCopies, BookCategory category);
+    static void removeBook(Book book);
+    static void updateBook(Book book);
 };
 
 
