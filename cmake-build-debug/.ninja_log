@@ -1,13 +1,10 @@
 # ninja log v6
 291	440	1735229259593486207	LibraryManagementSystem	652bef7ff626e1a4
+8	427	1735236642775941832	CMakeFiles/LibraryManagementSystem.dir/Transaction.cpp.o	b62f2cdc13e4c41f
 6	553	1735226708793542730	CMakeFiles/LibraryManagementSystem.dir/main.cpp.o	7f5167ec5094f321
 7	126	1735226708794773606	CMakeFiles/LibraryManagementSystem.dir/Reader.cpp.o	b93d181423f44816
 8	600	1735229202593724157	CMakeFiles/LibraryManagementSystem.dir/AuthManager.cpp.o	94af0ccc0f7d56bd
-8	403	1735229202593488615	CMakeFiles/LibraryManagementSystem.dir/User.cpp.o	db755a5a902e5d7a
-7	126	1735226708794401356	CMakeFiles/LibraryManagementSystem.dir/Author.cpp.o	5c49272d26a33eb6
-9	573	1735229202594390657	CMakeFiles/LibraryManagementSystem.dir/Library.cpp.o	372e65b218589faa
-7	291	1735229259309724601	CMakeFiles/LibraryManagementSystem.dir/Book.cpp.o	25f1fca7fd948296
-7	539	1735236470550794878	CMakeFiles/LibraryManagementSystem.dir/Book.cpp.o	25f1fca7fd948296
 8	607	1735236470551996086	CMakeFiles/LibraryManagementSystem.dir/User.cpp.o	db755a5a902e5d7a
+7	126	1735226708794401356	CMakeFiles/LibraryManagementSystem.dir/Author.cpp.o	5c49272d26a33eb6
 8	685	1735236470552465086	CMakeFiles/LibraryManagementSystem.dir/Library.cpp.o	372e65b218589faa
-8	427	1735236642775941832	CMakeFiles/LibraryManagementSystem.dir/Transaction.cpp.o	b62f2cdc13e4c41f
+7	539	1735236470550794878	CMakeFiles/LibraryManagementSystem.dir/Book.cpp.o	25f1fca7fd948296

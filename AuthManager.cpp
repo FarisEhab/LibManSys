@@ -5,6 +5,8 @@
 #include "AuthManager.h"
 
 #include <iostream>
+//TODO:: Create a Reader signup method and a staff signup method
+//TODO:: Create a Reader login method and a staff login method
 
 bool AuthManager::signUp(const std::string &username, const std::string &password) {
     // check if the username already exists
@@ -27,8 +29,8 @@ bool AuthManager::logIn(const std::string &username, const std::string &password
         return false;
     }
     // check password
-    //second means the "value" of the key-value pair
-    if (it->second != password) {
+    //second means the "value" of the key-value pair which is "User" object
+    if (it->second.getPassword() != password) {
         std::cerr << "Incorrect password" << std::endl;
         return false;
     }

@@ -11,6 +11,14 @@ User::User(const std::string &username, const std::string &password)
     id = nextId++;
 }
 
+std::string User::getPassword() const{
+    return password;
+}
+
+// Reader
+
+Reader::Reader(const std::string &username, const std::string &password) : User(username, password) {}
+
 void Reader::borrowBook(Book &book) {
     if (book.isAvailable()) {
         // Create a transaction
@@ -29,6 +37,11 @@ void Reader::borrowBook(Book &book) {
 void Reader::displayRole() const override {
     std::cout << "Role: Reader" << std::endl;
 }
+
+
+// Staff
+
+Staff::Staff(const std::string &username, const std::string &password) : User(username, password){}
 
 void Staff::addBook(const std::string &ISBN, const std::string &title,
     const Author &author, int numCopies, const BookCategory category) {

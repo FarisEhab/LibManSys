@@ -67,12 +67,6 @@ build CMakeFiles/LibraryManagementSystem.dir/Book.cpp.o: CXX_COMPILER__LibraryMa
   OBJECT_DIR = CMakeFiles/LibraryManagementSystem.dir
   OBJECT_FILE_DIR = CMakeFiles/LibraryManagementSystem.dir
 
-build CMakeFiles/LibraryManagementSystem.dir/Reader.cpp.o: CXX_COMPILER__LibraryManagementSystem_unscanned_Debug /Users/macbook/CLionProjects/LibraryManagementSystem/Reader.cpp || cmake_object_order_depends_target_LibraryManagementSystem
-  DEP_FILE = CMakeFiles/LibraryManagementSystem.dir/Reader.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/LibraryManagementSystem.dir
-  OBJECT_FILE_DIR = CMakeFiles/LibraryManagementSystem.dir
-
 build CMakeFiles/LibraryManagementSystem.dir/User.cpp.o: CXX_COMPILER__LibraryManagementSystem_unscanned_Debug /Users/macbook/CLionProjects/LibraryManagementSystem/User.cpp || cmake_object_order_depends_target_LibraryManagementSystem
   DEP_FILE = CMakeFiles/LibraryManagementSystem.dir/User.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -fcolor-diagnostics
@@ -111,7 +105,7 @@ build CMakeFiles/LibraryManagementSystem.dir/Catalogue.cpp.o: CXX_COMPILER__Libr
 #############################################
 # Link the executable LibraryManagementSystem
 
-build LibraryManagementSystem: CXX_EXECUTABLE_LINKER__LibraryManagementSystem_Debug CMakeFiles/LibraryManagementSystem.dir/main.cpp.o CMakeFiles/LibraryManagementSystem.dir/Author.cpp.o CMakeFiles/LibraryManagementSystem.dir/Book.cpp.o CMakeFiles/LibraryManagementSystem.dir/Reader.cpp.o CMakeFiles/LibraryManagementSystem.dir/User.cpp.o CMakeFiles/LibraryManagementSystem.dir/AuthManager.cpp.o CMakeFiles/LibraryManagementSystem.dir/Library.cpp.o CMakeFiles/LibraryManagementSystem.dir/Transaction.cpp.o CMakeFiles/LibraryManagementSystem.dir/Catalogue.cpp.o
+build LibraryManagementSystem: CXX_EXECUTABLE_LINKER__LibraryManagementSystem_Debug CMakeFiles/LibraryManagementSystem.dir/main.cpp.o CMakeFiles/LibraryManagementSystem.dir/Author.cpp.o CMakeFiles/LibraryManagementSystem.dir/Book.cpp.o CMakeFiles/LibraryManagementSystem.dir/User.cpp.o CMakeFiles/LibraryManagementSystem.dir/AuthManager.cpp.o CMakeFiles/LibraryManagementSystem.dir/Library.cpp.o CMakeFiles/LibraryManagementSystem.dir/Transaction.cpp.o CMakeFiles/LibraryManagementSystem.dir/Catalogue.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1
   OBJECT_DIR = CMakeFiles/LibraryManagementSystem.dir
   POST_BUILD = :

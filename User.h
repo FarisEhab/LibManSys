@@ -19,6 +19,7 @@ protected:
 
 public:
     User(const std::string& username, const std::string& password);
+    std::string getPassword() const;
     virtual ~User() = default;
 
     virtual void displayRole() const = 0;
@@ -30,6 +31,7 @@ private:
     std::vector<Book> borrwedBooks;
 
 public:
+    Reader(const std::string &username, const std::string &password);
     //polymporphism
     void displayRole() const override;
     // Borrow a book
@@ -39,6 +41,7 @@ public:
 class Staff : public User {
 
 public:
+    Staff(const std::string& username, const std::string& password);
     void displayRole() const override;
     static void addBook(const std::string& ISBN, const std::string& title,
         const Author& author,
