@@ -6,7 +6,7 @@
 
 
 
-Book::Book(const std::string& ISBN, const std::string& title, const Author& author, BookCategory category) {
+Book::Book(const std::string& ISBN, const std::string& title, const Author& author, const BookCategory category) {
     this->ISBN = ISBN;
     this->title = title;
     this->author = author;

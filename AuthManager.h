@@ -13,7 +13,8 @@
 class AuthManager {
 private:
 
-    std::map<std::string, User> users; // username -> password
+    std::unordered_map<std::string, Staff> admins; // username -> password
+    std::unordered_map<std::string, Reader> readers; // username -> password
 
 public:
     //signup method
@@ -22,6 +23,8 @@ public:
     bool logIn(const std::string &username, const std::string &password);
 
     int getUserCount() const;
+
+    ~AuthManager() = default;
 };
 
 

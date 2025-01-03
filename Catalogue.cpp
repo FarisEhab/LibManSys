@@ -11,13 +11,14 @@ bool Catalogue::findByISBN(const std::string &ISBN) {
     return books.find(ISBN) != books.end();
 };
 
-void Catalogue::addBook(const Book& book) {
+void Catalogue::addBook(const std::string &ISBN, const std::string &title, const Author &author, BookCategory category) {
     // add the book to the catalogue
     // check if the book is already in the catalogue
-    if (findByISBN(book.getISBN())) {
+    if (findByISBN(ISBN)) {
         std::cout << "Book already exists in the catalogue" << std::endl;
     } else {
         // if not, add the book to the catalogue
+        Book book(ISBN, title, author, category);
         books[book.getISBN()] = book;
     }
 };

@@ -7,7 +7,6 @@
 #include<string>
 #include <vector>
 #include "Book.h"
-#include "Catalogue.h"
 
 
 class User {
@@ -18,19 +17,24 @@ protected:
     std::string password;
 
 public:
+    User();
+
     User(const std::string& username, const std::string& password);
+
     std::string getPassword() const;
+
     virtual ~User() = default;
 
     virtual void displayRole() const = 0;
 
 };
 
-class Reader : public User {
+class Reader final : public User {
 private:
-    std::vector<Book> borrwedBooks;
+    std::vector<Book> borrowedBooks;
 
 public:
+    Reader();
     Reader(const std::string &username, const std::string &password);
     //polymporphism
     void displayRole() const override;
@@ -38,7 +42,7 @@ public:
     void borrowBook(Book& book);
 };
 
-class Staff : public User {
+class Staff final : public User {
 
 public:
     Staff(const std::string& username, const std::string& password);
@@ -46,8 +50,8 @@ public:
     static void addBook(const std::string& ISBN, const std::string& title,
         const Author& author,
         int numCopies, BookCategory category);
-    static void removeBook(Book book);
-    static void updateBook(Book book);
+    static void removeBook(const Book &book);
+    static void updateBook(const Book &book);
 };
 
 

@@ -4,7 +4,14 @@
 #include <iostream>
 #include "User.h"
 
+#include "Catalogue.h"
+#include "Transaction.h"
+
 int User::nextId = 1;
+
+User::User () {
+    id = nextId++;
+}
 
 User::User(const std::string &username, const std::string &password)
     : username(username), password(password) {
@@ -16,6 +23,8 @@ std::string User::getPassword() const{
 }
 
 // Reader
+
+Reader::Reader() = default;
 
 Reader::Reader(const std::string &username, const std::string &password) : User(username, password) {}
 
@@ -34,10 +43,9 @@ void Reader::borrowBook(Book &book) {
     }
 }
 
-void Reader::displayRole() const override {
+ void Reader::displayRole() const {
     std::cout << "Role: Reader" << std::endl;
 }
-
 
 // Staff
 
@@ -45,18 +53,17 @@ Staff::Staff(const std::string &username, const std::string &password) : User(us
 
 void Staff::addBook(const std::string &ISBN, const std::string &title,
     const Author &author, int numCopies, const BookCategory category) {
-    const Book book(ISBN, title, author, category);
-    Catalogue::addBook(book);
+    Catalogue::addBook(ISBN, title, author, category);
 }
 
-void Staff::removeBook(Book book) {
+void Staff::removeBook(const Book &book) {
     Catalogue::removeBook(book);
 }
 
-void Staff::updateBook(Book book) {
+void Staff::updateBook(const Book &book) {
     Catalogue::updateBook(book);
 }
 
-void Staff::displayRole() const override {
+void Staff::displayRole() const {
     std::cout << "Role: Staff" << std::endl;
 }
