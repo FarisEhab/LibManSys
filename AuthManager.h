@@ -24,6 +24,8 @@ public:
 
     int getUserCount() const;
 
+    bool isStaff(const std::string &username);
+
     ~AuthManager() = default;
 };
 

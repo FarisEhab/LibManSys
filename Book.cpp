@@ -5,7 +5,7 @@
 #include "Book.h"
 
 
-
+Book::Book() : ISBN(""), title(""), author(Author()), numCopies(0), category(BookCategory::Science) {}
 Book::Book(const std::string& ISBN, const std::string& title, const Author& author, const BookCategory category) {
     this->ISBN = ISBN;
     this->title = title;

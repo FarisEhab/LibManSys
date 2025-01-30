@@ -18,7 +18,7 @@ private:
 public:
     // add a book to the catalogue
     static void addBook(const std::string &ISBN, const std::string &title,
-        const Author &author, BookCategory category);
+        const Author &author, const BookCategory category);
 
     // remove a book from the catalogue
     static void removeBook(const Book &book);

@@ -29,10 +29,11 @@ private:
 
 public:
     // Constructor
-
+    Book();
     Book(const std::string& ISBN, const std::string& title,
         const Author& author,
         BookCategory category);
+
     std::string getISBN() const;
     // to check if the book is available in the cataloge or not
     bool isAvailable() const;

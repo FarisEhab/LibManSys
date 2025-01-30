@@ -37,6 +37,10 @@ bool AuthManager::logIn(const std::string &username, const std::string &password
     return true;
 };
 
+bool AuthManager::isStaff(const std::string &username) {
+    return admins.find(username) != admins.end();
+};
+
 int AuthManager::getUserCount() const {
     return readers.size();
 };
